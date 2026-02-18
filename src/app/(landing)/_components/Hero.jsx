@@ -162,28 +162,28 @@ export default function Hero() {
               variants={itemVariants}
               className="flex flex-wrap gap-2 md:gap-3 pt-2"
             >
-              <button className="group flex items-center gap-2 bg-black text-white px-5 py-4 md:px-6 md:py-5.5 rounded-xl hover:bg-gray-800 transition-all shadow-md active:scale-95">
+              <button className="group flex items-center gap-3   bg-black text-white px-5 py-4 md:px-6 md:py-5 rounded-[16px] hover:bg-gray-800 transition-all shadow-md active:scale-95">
                 <AppStoreIcon className="w-5 h-5" />
                 <div className="text-left">
-                  <div className="text-[9px] uppercase font-medium leading-none mb-0.5 opacity-80">
+                  <div className="text-[12px] font-medium leading-none mb-1">
                     Download on the
                   </div>
                   <div
-                    className="text-[13px] md:text-base font-semibold leading-none"
+                    className="text-[18px] md:text-base font-semibold leading-none"
                     style={{ fontFamily: "var(--font-space-grotesk)" }}
                   >
                     App Store
                   </div>
                 </div>
               </button>
-              <button className="group flex items-center gap-2 bg-black text-white px-5 py-4 md:px-5 md:py-2 rounded-xl hover:bg-gray-800 transition-all shadow-md active:scale-95">
+              <button className="group flex items-center gap-3 bg-black text-white px-5 py-4 md:px-5 md:py-2 rounded-[16px] hover:bg-gray-800 transition-all shadow-md active:scale-95">
                 <PlayStoreIcon className="w-5 h-5" />
                 <div className="text-left">
-                  <div className="text-[9px] uppercase font-medium leading-none mb-0.5 opacity-80">
+                  <div className="text-[12px] font-medium leading-none mb-1">
                     Get it on
                   </div>
                   <div
-                    className="text-[13px] md:text-base font-semibold leading-none"
+                    className="text-[18px] md:text-base font-semibold leading-none"
                     style={{ fontFamily: "var(--font-space-grotesk)" }}
                   >
                     Google Play

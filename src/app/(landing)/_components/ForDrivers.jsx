@@ -123,7 +123,7 @@ export default function ForDrivers() {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="bg-white p-6 md:p-8 rounded-[24px] md:rounded-[32px] border border-gray-100/50 flex flex-col md:flex-row gap-5 md:gap-6 hover:shadow-lg transition-all duration-300"
+              className="bg-white p-6 md:p-8 rounded-[16px] border border-gray-100/50 flex flex-col md:flex-row gap-5 md:gap-6 hover:shadow-lg transition-all duration-300"
             >
               <div className="w-[52px] h-[52px] rounded-[16px] bg-[#FEF3E7] flex items-center justify-center text-[#111827] shrink-0">
                 {benefit.icon}
@@ -162,7 +162,7 @@ export default function ForDrivers() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-          className="bg-white p-8 md:p-12 rounded-[24px] md:rounded-3xl border border-gray-100 mb-12"
+          className="bg-white p-8 md:p-12 rounded-[16px] border border-gray-100 mb-12"
         >
           <h3
             className="text-[24px] md:text-2xl font-bold text-[#111827] text-center mb-8 md:mb-12"

@@ -40,8 +40,7 @@ export default function CTA() {
                 ease: [0.16, 1, 0.3, 1],
                 delay: 0.3,
               }}
-              className="text-[28px] md:text-5xl lg:text-6xl font-semibold text-white tracking-tight leading-[1.2] md:leading-tight"
-              style={{ fontFamily: "var(--font-space-grotesk)" }}
+              className="text-[28px] md:text-5xl lg:text-6xl font-medium text-white font-space"
             >
               Ready to Experience <br className="hidden md:block" />
               Hassle-Free Fuel Delivery?
@@ -74,30 +73,24 @@ export default function CTA() {
               }}
               className="flex flex-wrap justify-center gap-3"
             >
-              <button className="group flex items-center gap-2 bg-black text-white px-5 py-3 md:px-6 md:py-6 rounded-xl hover:bg-gray-800 transition-all shadow-xl active:scale-95">
-                <AppStoreIcon className="w-5 h-5 md:w-6 md:h-6" />
+              <button className="group flex items-center gap-3 bg-black text-white px-5 py-4 md:px-6 md:py-5 rounded-[16px] hover:bg-gray-800 transition-all shadow-md active:scale-95">
+                <AppStoreIcon className="w-5 h-5" />
                 <div className="text-left">
-                  <div className="text-[9px] md:text-[8px] uppercase font-medium leading-none mb-0.5 opacity-80">
+                  <div className="text-[12px] font-medium leading-none mb-1">
                     Download on the
                   </div>
-                  <div
-                    className="text-[13px] md:text-base font-semibold leading-none"
-                    style={{ fontFamily: "var(--font-space-grotesk)" }}
-                  >
+                  <div className="text-[18px] md:text-base font-semibold leading-none font-space">
                     App Store
                   </div>
                 </div>
               </button>
-              <button className="group flex items-center gap-2 bg-black text-white px-5 py-3 md:px-6 md:py-6 rounded-xl hover:bg-gray-800 transition-all shadow-xl active:scale-95">
-                <PlayStoreIcon className="w-5 h-5 md:w-6 md:h-6" />
+              <button className="group flex items-center gap-3 bg-black text-white px-5 py-4 md:px-5 md:py-2 rounded-[16px] hover:bg-gray-800 transition-all shadow-md active:scale-95">
+                <PlayStoreIcon className="w-5 h-5" />
                 <div className="text-left">
-                  <div className="text-[9px] md:text-[8px] uppercase font-medium leading-none mb-1 opacity-80">
+                  <div className="text-[12px] font-medium leading-none mb-1">
                     Get it on
                   </div>
-                  <div
-                    className="text-[13px] md:text-base font-semibold leading-none"
-                    style={{ fontFamily: "var(--font-space-grotesk)" }}
-                  >
+                  <div className="text-[18px] md:text-base font-semibold leading-none font-space">
                     Google Play
                   </div>
                 </div>
