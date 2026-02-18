@@ -116,7 +116,7 @@ export default function Hero() {
             </motion.p>
 
             {/* Stats */}
-            <motion.div
+            {/* <motion.div
               variants={itemVariants}
               className="flex flex-wrap items-center gap-x-6 gap-y-4 py-4 md:py-2 border-y border-gray-100/50"
             >
@@ -155,7 +155,7 @@ export default function Hero() {
                   Rating
                 </div>
               </div>
-            </motion.div>
+            </motion.div> */}
 
             {/* App Store Buttons */}
             <motion.div
