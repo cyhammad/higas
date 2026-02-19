@@ -210,9 +210,14 @@ export default function ForDrivers() {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
           className="flex justify-center"
         >
-          <button className="px-10 py-4 rounded-full bg-[#F98410] text-white font-bold text-lg hover:bg-[#fb8c1f] transition-all duration-300 transform hover:scale-105 shadow-[0_10px_30px_rgba(249,132,16,0.3)] active:scale-95">
+          <a
+            href="https://apps.apple.com/pk/app/hi-gas-drivers/id6751334738"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-10 py-4 rounded-full bg-[#F98410] text-white font-bold text-lg hover:bg-[#fb8c1f] transition-all duration-300 transform hover:scale-105 shadow-[0_10px_30px_rgba(249,132,16,0.3)] active:scale-95"
+          >
             Become a Driver
-          </button>
+          </a>
         </motion.div>
       </div>
     </section>

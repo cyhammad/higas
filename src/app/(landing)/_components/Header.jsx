@@ -95,14 +95,16 @@ export default function Header() {
 
         {/* Action Button */}
         <motion.div variants={itemVariants} className="flex-1 flex justify-end">
-          <Link
-            href="#download"
+          <a
+            href="https://apps.apple.com/us/app/hi-gas/id6751337577"
+            target="_blank"
+            rel="noopener noreferrer"
             className={`inline-flex items-center justify-center px-6 py-2 rounded-full bg-[#FF8411] text-white font-bold text-[15px] hover:bg-[#fb8c1f] hover:shadow-[0_10px_20px_rgba(255,132,17,0.3)] transition-all duration-300 active:scale-95 whitespace-nowrap ${
               scrolled ? "scale-95" : ""
             }`}
           >
             Download App
-          </Link>
+          </a>
         </motion.div>
       </div>
     </motion.header>

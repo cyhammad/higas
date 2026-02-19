@@ -200,9 +200,14 @@ export default function HowItWorks() {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.6 }}
           className="flex justify-center"
         >
-          <button className="px-7 py-3 rounded-full bg-[#f98410] text-white font-semibold text-[18px] hover:bg-[#fb8c1f] transition-all duration-300 transform hover:scale-105 shadow-[0_10px_30px_rgba(249,132,16,0.3)] active:scale-95">
+          <a
+            href="https://apps.apple.com/us/app/hi-gas/id6751337577"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-7 py-3 rounded-full bg-[#f98410] text-white font-semibold text-[18px] hover:bg-[#fb8c1f] transition-all duration-300 transform hover:scale-105 shadow-[0_10px_30px_rgba(249,132,16,0.3)] active:scale-95"
+          >
             Start Your First Request
-          </button>
+          </a>
         </motion.div>
       </div>
     </section>
