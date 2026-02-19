@@ -13,8 +13,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata = {
-  title: "HI-GAS - Fuel Delivery Simplified",
-  description: "Get fuel delivered anywhere, anytime with HI-GAS.",
+  title: "Hi-GAS - Fuel Delivery Simplified",
+  description: "Get fuel delivered anywhere, anytime with Hi-GAS.",
 };
 
 export default function RootLayout({ children }) {

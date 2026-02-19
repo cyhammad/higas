@@ -9,7 +9,7 @@ import {
   PlayStoreIcon,
 } from "@/components/icons/icons";
 
-export default function Hero() {
+export default function Hero({ t }) {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -92,7 +92,7 @@ export default function Hero() {
             >
               <ZapIcon className="mr-2 w-4 h-4" />
               <span className="text-[#F98410] font-semibold text-[13px] md:text-[14px]">
-                Fast & Reliable Fuel Delivery
+                {t?.badge || "Fast & Reliable Fuel Delivery"}
               </span>
             </motion.div>
 
@@ -102,8 +102,8 @@ export default function Hero() {
               className="text-[40px] sm:text-5xl lg:text-6xl xl:text-[72px] font-semibold text-[#111827] tracking-tight leading-[1.1] md:leading-tight"
               style={{ fontFamily: "var(--font-space-grotesk)" }}
             >
-              Get Fuel Delivered <br />
-              <span className="text-[#F98410]">Anywhere, Anytime</span>
+              {t?.title || "Get Fuel Delivered"} <br />
+              <span className="text-[#F98410]">{t?.titleHighlight || "Anywhere, Anytime"}</span>
             </motion.h1>
 
             {/* Subtext */}
@@ -111,8 +111,7 @@ export default function Hero() {
               variants={itemVariants}
               className="text-[#4A5565] text-[15px] md:text-base leading-relaxed max-w-lg md:max-w-none"
             >
-              Never worry about running out of fuel again. Request fuel delivery
-              in seconds and choose from competitive bids from verified drivers.
+              {t?.subtext || "Never worry about running out of fuel again. Request fuel delivery in seconds and choose from competitive bids from verified drivers."}
             </motion.p>
 
             {/* Stats */}
@@ -171,13 +170,13 @@ export default function Hero() {
                 <AppStoreIcon className="w-5 h-5" />
                 <div className="text-left">
                   <div className="text-[12px] font-medium leading-none mb-1">
-                    Download on the
+                    {t?.downloadOn || "Download on the"}
                   </div>
                   <div
                     className="text-[18px] md:text-base font-semibold leading-none"
                     style={{ fontFamily: "var(--font-space-grotesk)" }}
                   >
-                    App Store
+                    {t?.appStore || "App Store"}
                   </div>
                 </div>
               </a>
@@ -194,7 +193,7 @@ export default function Hero() {
             <div className="relative w-full max-w-[320px] lg:max-w-[360px]">
               <Image
                 src="/hero-image.png"
-                alt="Higas Mobile App"
+                alt={t?.heroImageAlt || "Higas Mobile App"}
                 width={400}
                 height={600}
                 className="w-full h-auto drop-shadow-2xl"

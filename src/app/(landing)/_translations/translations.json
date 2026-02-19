@@ -1,0 +1,282 @@
+{
+  "en": {
+    "header": {
+      "features": "Features",
+      "howItWorks": "How It Works",
+      "forDrivers": "For Drivers",
+      "downloadApp": "Download App"
+    },
+    "hero": {
+      "badge": "Fast & Reliable Fuel Delivery",
+      "title": "Get Fuel Delivered",
+      "titleHighlight": "Anywhere, Anytime",
+      "subtext": "Never worry about running out of fuel again. Request fuel delivery in seconds and choose from competitive bids from verified drivers.",
+      "downloadOn": "Download on the",
+      "appStore": "App Store",
+      "heroImageAlt": "Higas Mobile App"
+    },
+    "features": {
+      "badge": "Why Choose Hi-GAS",
+      "title": "Features That Make Us",
+      "titleHighlight": "Different",
+      "subtext": "Experience the future of fuel delivery with our innovative platform designed for convenience and reliability.",
+      "items": [
+        {
+          "title": "Instant Requests",
+          "description": "Place your fuel request in seconds with our intuitive app interface."
+        },
+        {
+          "title": "Competitive Bidding",
+          "description": "Get multiple bids from drivers and choose the best price for you."
+        },
+        {
+          "title": "Real-Time Tracking",
+          "description": "Track your fuel delivery in real-time with live GPS updates."
+        },
+        {
+          "title": "Verified Drivers",
+          "description": "All drivers are background-checked and verified for your safety."
+        },
+        {
+          "title": "24/7 Availability",
+          "description": "Need fuel at midnight? We have got drivers ready anytime, anywhere."
+        },
+        {
+          "title": "Live Chat Support",
+          "description": "Get instant help with our in-app chat support and ticket system."
+        }
+      ]
+    },
+    "howItWorks": {
+      "badge": "Simple Process",
+      "title": "How It Works for",
+      "titleHighlight": "Users",
+      "subtext": "Getting fuel delivered to your location is as easy as 1-2-3-4-5",
+      "steps": [
+        {
+          "title": "Place Fuel Request",
+          "description": "Enter your location and fuel requirements. Choose your preferred fuel type and quantity."
+        },
+        {
+          "title": "Get Multiple Bids",
+          "description": "Receive competitive bids from nearby verified drivers. Compare prices and delivery times."
+        },
+        {
+          "title": "Choose Your Driver",
+          "description": "Select the driver that best fits your needs. View ratings and estimated arrival time."
+        },
+        {
+          "title": "Track & Receive",
+          "description": "Track your fuel delivery in real-time. Pay securely through the app after delivery."
+        },
+        {
+          "title": "Rate Experience",
+          "description": "Rate your driver and help maintain our quality service standards."
+        }
+      ],
+      "ctaButton": "Start Your First Request"
+    },
+    "forDrivers": {
+      "badge": "For Drivers",
+      "title": "Start Earning with",
+      "titleHighlight": "Hi-GAS",
+      "subtext": "Turn your spare time into income. Join our network of verified drivers and help people get fuel when they need it most.",
+      "benefits": [
+        {
+          "title": "Earn Extra Income",
+          "description": "Set your own rates and accept jobs that work for your schedule. Flexible earning potential.",
+          "stat": "$250+",
+          "statLabel": "Weekly Average"
+        },
+        {
+          "title": "Flexible Schedule",
+          "description": "Work whenever you want. Accept jobs during your free time and be your own boss.",
+          "stat": "24/7",
+          "statLabel": "Work Anytime"
+        },
+        {
+          "title": "Use Your Vehicle",
+          "description": "Use your own vehicle to deliver fuel. No special equipment needed to get started.",
+          "stat": "Any",
+          "statLabel": "Vehicle Type"
+        },
+        {
+          "title": "Growing Demand",
+          "description": "Join a rapidly growing platform with thousands of users requesting fuel daily.",
+          "stat": "10K+",
+          "statLabel": "Active Users"
+        }
+      ],
+      "requirementsTitle": "Driver Requirements",
+      "requirements": [
+        {
+          "title": "Valid License",
+          "description": "Driver's license & insurance"
+        },
+        {
+          "title": "Background Check",
+          "description": "Pass our verification process"
+        },
+        {
+          "title": "Fuel Transport",
+          "description": "Proper fuel container"
+        }
+      ],
+      "ctaButton": "Become a Driver"
+    },
+    "cta": {
+      "title": "Ready to Experience",
+      "titleHighlight": "Hassle-Free Fuel Delivery?",
+      "subtext": "Download the Hi-GAS app today and get your first delivery with exclusive introductory pricing.",
+      "downloadOn": "Download on the",
+      "appStore": "App Store",
+      "noCreditCard": "No credit card required",
+      "firstDeliveryDiscount": "First delivery discount"
+    },
+    "footer": {
+      "title": "Join the Hi-GAS community",
+      "subtext": "The smartest way to get fuel delivered directly to your location. Fast, reliable, and affordable.",
+      "copyright": "© 2026 – 2027 Higas. All rights reserved."
+    }
+  },
+  "es": {
+    "header": {
+      "features": "Características",
+      "howItWorks": "Cómo Funciona",
+      "forDrivers": "Para Conductores",
+      "downloadApp": "Descargar App"
+    },
+    "hero": {
+      "badge": "Entrega de Combustible Rápida y Confiable",
+      "title": "Recibe Combustible",
+      "titleHighlight": "Donde Sea, Cuando Sea",
+      "subtext": "Nunca más te preocupes por quedarte sin combustible. Solicita la entrega de combustible en segundos y elige entre ofertas competitivas de conductores verificados.",
+      "downloadOn": "Descargar en",
+      "appStore": "App Store",
+      "heroImageAlt": "App Móvil Higas"
+    },
+    "features": {
+      "badge": "Por Qué Elegir Hi-GAS",
+      "title": "Características Que Nos Hacen",
+      "titleHighlight": "Diferentes",
+      "subtext": "Experimenta el futuro de la entrega de combustible con nuestra plataforma innovadora diseñada para la conveniencia y la confiabilidad.",
+      "items": [
+        {
+          "title": "Solicitudes Instantáneas",
+          "description": "Realiza tu solicitud de combustible en segundos con nuestra interfaz intuitiva."
+        },
+        {
+          "title": "Ofertas Competitivas",
+          "description": "Recibe múltiples ofertas de conductores y elige el mejor precio para ti."
+        },
+        {
+          "title": "Seguimiento en Tiempo Real",
+          "description": "Rastrea tu entrega de combustible en tiempo real con actualizaciones GPS en vivo."
+        },
+        {
+          "title": "Conductores Verificados",
+          "description": "Todos los conductores están verificados y con antecedentes revisados para tu seguridad."
+        },
+        {
+          "title": "Disponibilidad 24/7",
+          "description": "¿Necesitas combustible a medianoche? Tenemos conductores listos en cualquier momento y lugar."
+        },
+        {
+          "title": "Soporte de Chat en Vivo",
+          "description": "Obtén ayuda instantánea con nuestro chat en la app y sistema de tickets."
+        }
+      ]
+    },
+    "howItWorks": {
+      "badge": "Proceso Simple",
+      "title": "Cómo Funciona para",
+      "titleHighlight": "Usuarios",
+      "subtext": "Recibir combustible en tu ubicación es tan fácil como 1-2-3-4-5",
+      "steps": [
+        {
+          "title": "Solicita Combustible",
+          "description": "Ingresa tu ubicación y requisitos de combustible. Elige tu tipo y cantidad preferidos."
+        },
+        {
+          "title": "Recibe Múltiples Ofertas",
+          "description": "Recibe ofertas competitivas de conductores verificados cercanos. Compara precios y tiempos de entrega."
+        },
+        {
+          "title": "Elige Tu Conductor",
+          "description": "Selecciona el conductor que mejor se adapte a tus necesidades. Ve calificaciones y tiempo estimado de llegada."
+        },
+        {
+          "title": "Rastrea y Recibe",
+          "description": "Rastrea tu entrega de combustible en tiempo real. Paga de forma segura a través de la app después de la entrega."
+        },
+        {
+          "title": "Califica la Experiencia",
+          "description": "Califica a tu conductor y ayuda a mantener nuestros estándares de calidad."
+        }
+      ],
+      "ctaButton": "Inicia Tu Primera Solicitud"
+    },
+    "forDrivers": {
+      "badge": "Para Conductores",
+      "title": "Empieza a Ganar con",
+      "titleHighlight": "Hi-GAS",
+      "subtext": "Convierte tu tiempo libre en ingresos. Únete a nuestra red de conductores verificados y ayuda a las personas a obtener combustible cuando más lo necesitan.",
+      "benefits": [
+        {
+          "title": "Gana Ingresos Extra",
+          "description": "Establece tus propias tarifas y acepta trabajos que se adapten a tu horario. Potencial de ganancias flexible.",
+          "stat": "$250+",
+          "statLabel": "Promedio Semanal"
+        },
+        {
+          "title": "Horario Flexible",
+          "description": "Trabaja cuando quieras. Acepta trabajos en tu tiempo libre y sé tu propio jefe.",
+          "stat": "24/7",
+          "statLabel": "Trabaja Cuando Sea"
+        },
+        {
+          "title": "Usa Tu Vehículo",
+          "description": "Usa tu propio vehículo para entregar combustible. No necesitas equipo especial para comenzar.",
+          "stat": "Cualquier",
+          "statLabel": "Tipo de Vehículo"
+        },
+        {
+          "title": "Demanda Creciente",
+          "description": "Únete a una plataforma en rápido crecimiento con miles de usuarios solicitando combustible diariamente.",
+          "stat": "10K+",
+          "statLabel": "Usuarios Activos"
+        }
+      ],
+      "requirementsTitle": "Requisitos para Conductores",
+      "requirements": [
+        {
+          "title": "Licencia Válida",
+          "description": "Licencia de conducir y seguro"
+        },
+        {
+          "title": "Verificación de Antecedentes",
+          "description": "Aprobar nuestro proceso de verificación"
+        },
+        {
+          "title": "Transporte de Combustible",
+          "description": "Contenedor de combustible adecuado"
+        }
+      ],
+      "ctaButton": "Conviértete en Conductor"
+    },
+    "cta": {
+      "title": "¿Listo para Experimentar",
+      "titleHighlight": "la Entrega de Combustible Sin Complicaciones?",
+      "subtext": "Descarga la app Hi-GAS hoy y obtén tu primera entrega con precios introductorios exclusivos.",
+      "downloadOn": "Descargar en",
+      "appStore": "App Store",
+      "noCreditCard": "No se requiere tarjeta de crédito",
+      "firstDeliveryDiscount": "Descuento en la primera entrega"
+    },
+    "footer": {
+      "title": "Únete a la comunidad Hi-GAS",
+      "subtext": "La forma más inteligente de recibir combustible directamente en tu ubicación. Rápido, confiable y asequible.",
+      "copyright": "© 2026 – 2027 Higas. Todos los derechos reservados."
+    }
+  }
+}

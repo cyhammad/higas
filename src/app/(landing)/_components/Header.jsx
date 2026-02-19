@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
 
-export default function Header() {
+export default function Header({ t, lang }) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -61,10 +61,10 @@ export default function Header() {
       >
         {/* Logo */}
         <motion.div variants={itemVariants} className="flex-1">
-          <Link href="/" className="flex items-center w-fit">
+          <Link href={`/?lang=${lang || "en"}`} className="flex items-center w-fit">
             <Image
               src="/higas-logo.png"
-              alt="HI-GAS Logo"
+              alt="Hi-GAS Logo"
               width={85}
               height={85}
               priority
@@ -78,11 +78,11 @@ export default function Header() {
         {/* Navigation Links - Centered */}
         <nav className="hidden md:flex items-center justify-center gap-8">
           {[
-            ["Features", "#features"],
-            ["How It Works", "#how-it-works"],
-            ["For Drivers", "#for-drivers"],
+            [t?.features || "Features", "#features"],
+            [t?.howItWorks || "How It Works", "#how-it-works"],
+            [t?.forDrivers || "For Drivers", "#for-drivers"],
           ].map(([title, url]) => (
-            <motion.div key={title} variants={itemVariants}>
+            <motion.div key={url} variants={itemVariants}>
               <Link
                 href={url}
                 className="text-[#2B2B2B] hover:text-[#FF8411] font-semibold text-[16px] transition-all duration-200 tracking-tight"
@@ -93,8 +93,30 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Action Button */}
-        <motion.div variants={itemVariants} className="flex-1 flex justify-end">
+        {/* Action Buttons: Language Switch + Download */}
+        <motion.div variants={itemVariants} className="flex-1 flex items-center justify-end gap-3">
+          <div className="flex items-center rounded-full border border-gray-200 bg-white/50 p-1">
+            <Link
+              href={`/?lang=en`}
+              className={`px-3 py-1.5 rounded-full text-sm font-semibold transition-all ${
+                lang === "en"
+                  ? "bg-[#FF8411] text-white"
+                  : "text-gray-600 hover:text-[#FF8411]"
+              }`}
+            >
+              EN
+            </Link>
+            <Link
+              href={`/?lang=es`}
+              className={`px-3 py-1.5 rounded-full text-sm font-semibold transition-all ${
+                lang === "es"
+                  ? "bg-[#FF8411] text-white"
+                  : "text-gray-600 hover:text-[#FF8411]"
+              }`}
+            >
+              ES
+            </Link>
+          </div>
           <a
             href="https://apps.apple.com/us/app/hi-gas/id6751337577"
             target="_blank"
@@ -103,7 +125,7 @@ export default function Header() {
               scrolled ? "scale-95" : ""
             }`}
           >
-            Download App
+            {t?.downloadApp || "Download App"}
           </a>
         </motion.div>
       </div>

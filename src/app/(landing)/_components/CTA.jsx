@@ -3,7 +3,7 @@
 import { motion } from "motion/react";
 import { AppStoreIcon, PlayStoreIcon } from "@/components/icons/icons";
 
-export default function CTA() {
+export default function CTA({ t }) {
   return (
     <section className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
@@ -42,8 +42,8 @@ export default function CTA() {
               }}
               className="text-[28px] md:text-5xl lg:text-6xl font-medium text-white font-space"
             >
-              Ready to Experience <br className="hidden md:block" />
-              Hassle-Free Fuel Delivery?
+              {t?.title || "Ready to Experience"} <br className="hidden md:block" />
+              {t?.titleHighlight || "Hassle-Free Fuel Delivery?"}
             </motion.h2>
 
             <motion.p
@@ -57,8 +57,7 @@ export default function CTA() {
               }}
               className="text-white/90 text-[15px] md:text-lg font-inter max-w-xl mx-auto leading-relaxed"
             >
-              Download the HI-GAS app today and get your first delivery with
-              exclusive introductory pricing.
+              {t?.subtext || "Download the Hi-GAS app today and get your first delivery with exclusive introductory pricing."}
             </motion.p>
 
             {/* App Store Buttons */}
@@ -82,10 +81,10 @@ export default function CTA() {
                 <AppStoreIcon className="w-5 h-5" />
                 <div className="text-left">
                   <div className="text-[12px] font-medium leading-none mb-1">
-                    Download on the
+                    {t?.downloadOn || "Download on the"}
                   </div>
                   <div className="text-[18px] md:text-base font-semibold leading-none font-space">
-                    App Store
+                    {t?.appStore || "App Store"}
                   </div>
                 </div>
               </a>
@@ -101,12 +100,12 @@ export default function CTA() {
             >
               <div className="flex items-center gap-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-white" />
-                No credit card required
+                {t?.noCreditCard || "No credit card required"}
               </div>
               <div className="hidden md:block w-px h-4 bg-white/20" />
               <div className="flex items-center gap-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-white" />
-                First delivery discount
+                {t?.firstDeliveryDiscount || "First delivery discount"}
               </div>
             </motion.div>
           </div>

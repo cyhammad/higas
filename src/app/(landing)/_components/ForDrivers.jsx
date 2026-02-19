@@ -8,57 +8,29 @@ import {
   CheckMarkIcon,
 } from "@/components/icons/icons";
 
-const driverBenefits = [
-  {
-    title: "Earn Extra Income",
-    description:
-      "Set your own rates and accept jobs that work for your schedule. Flexible earning potential.",
-    stat: "$500+",
-    statLabel: "Weekly Average",
-    icon: <WalletIcon className="w-7 h-7" />,
-  },
-  {
-    title: "Flexible Schedule",
-    description:
-      "Work whenever you want. Accept jobs during your free time and be your own boss.",
-    stat: "24/7",
-    statLabel: "Work Anytime",
-    icon: <TrendingUpIcon className="w-7 h-7" />,
-  },
-  {
-    title: "Use Your Vehicle",
-    description:
-      "Use your own vehicle to deliver fuel. No special equipment needed to get started.",
-    stat: "Any",
-    statLabel: "Vehicle Type",
-    icon: <TruckIcon className="w-7 h-7" />,
-  },
-  {
-    title: "Growing Demand",
-    description:
-      "Join a rapidly growing platform with thousands of users requesting fuel daily.",
-    stat: "10K+",
-    statLabel: "Active Users",
-    icon: <TrendingUpIcon className="w-7 h-7" />,
-  },
+const benefitIcons = [
+  <WalletIcon key="wallet" className="w-7 h-7" />,
+  <TrendingUpIcon key="trend1" className="w-7 h-7" />,
+  <TruckIcon key="truck" className="w-7 h-7" />,
+  <TrendingUpIcon key="trend2" className="w-7 h-7" />,
 ];
 
-const requirements = [
-  {
-    title: "Valid License",
-    description: "Driver's license & insurance",
-  },
-  {
-    title: "Background Check",
-    description: "Pass our verification process",
-  },
-  {
-    title: "Fuel Transport",
-    description: "Proper fuel container",
-  },
+const defaultBenefits = [
+  { title: "Earn Extra Income", description: "Set your own rates and accept jobs that work for your schedule. Flexible earning potential.", stat: "$250+", statLabel: "Weekly Average" },
+  { title: "Flexible Schedule", description: "Work whenever you want. Accept jobs during your free time and be your own boss.", stat: "24/7", statLabel: "Work Anytime" },
+  { title: "Use Your Vehicle", description: "Use your own vehicle to deliver fuel. No special equipment needed to get started.", stat: "Any", statLabel: "Vehicle Type" },
+  { title: "Growing Demand", description: "Join a rapidly growing platform with thousands of users requesting fuel daily.", stat: "10K+", statLabel: "Active Users" },
 ];
 
-export default function ForDrivers() {
+const defaultRequirements = [
+  { title: "Valid License", description: "Driver's license & insurance" },
+  { title: "Background Check", description: "Pass our verification process" },
+  { title: "Fuel Transport", description: "Proper fuel container" },
+];
+
+export default function ForDrivers({ t }) {
+  const driverBenefits = (t?.benefits || defaultBenefits).map((b, i) => ({ ...b, icon: benefitIcons[i] }));
+  const requirements = t?.requirements || defaultRequirements;
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -94,7 +66,7 @@ export default function ForDrivers() {
         >
           <div className="px-4 py-1.5 rounded-full bg-[#F6821029] w-fit">
             <span className="text-[#F98410] font-semibold text-sm font-space">
-              For Drivers
+              {t?.badge || "For Drivers"}
             </span>
           </div>
 
@@ -102,12 +74,11 @@ export default function ForDrivers() {
             className="text-[32px] md:text-5xl font-semibold text-[#111827] tracking-tight leading-[1.2] md:leading-tight"
             style={{ fontFamily: "var(--font-space-grotesk)" }}
           >
-            Start Earning with <span className="text-[#F98410]">HI-GAS</span>
+            {t?.title || "Start Earning with"} <span className="text-[#F98410]">{t?.titleHighlight || "Hi-GAS"}</span>
           </h2>
 
           <p className="text-gray-500 text-[16px] md:text-lg max-w-2xl font-inter leading-relaxed">
-            Turn your spare time into income. Join our network of verified
-            drivers and help people get fuel when they need it most.
+            {t?.subtext || "Turn your spare time into income. Join our network of verified drivers and help people get fuel when they need it most."}
           </p>
         </motion.div>
 
@@ -168,7 +139,7 @@ export default function ForDrivers() {
             className="text-[24px] md:text-2xl font-bold text-[#111827] text-center mb-8 md:mb-12"
             style={{ fontFamily: "var(--font-space-grotesk)" }}
           >
-            Driver Requirements
+            {t?.requirementsTitle || "Driver Requirements"}
           </h3>
           <motion.div
             variants={containerVariants}
@@ -216,7 +187,7 @@ export default function ForDrivers() {
             rel="noopener noreferrer"
             className="px-10 py-4 rounded-full bg-[#F98410] text-white font-bold text-lg hover:bg-[#fb8c1f] transition-all duration-300 transform hover:scale-105 shadow-[0_10px_30px_rgba(249,132,16,0.3)] active:scale-95"
           >
-            Become a Driver
+            {t?.ctaButton || "Become a Driver"}
           </a>
         </motion.div>
       </div>

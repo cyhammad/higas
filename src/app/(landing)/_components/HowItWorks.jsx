@@ -6,72 +6,37 @@ import {
   SearchIcon,
   CheckCircleIcon,
   CreditCardIcon,
-  StarIcon,
 } from "@/components/icons/icons";
 
-const steps = [
-  {
-    title: "Place Fuel Request",
-    description:
-      "Enter your location and fuel requirements. Choose your preferred fuel type and quantity.",
-    icon: <MapPinIcon className="w-8 h-8 text-white" />,
-    color: "#FF6900",
-    tilt: "7deg",
-    number: "01",
-  },
-  {
-    title: "Get Multiple Bids",
-    description:
-      "Receive competitive bids from nearby verified drivers. Compare prices and delivery times.",
-    icon: <SearchIcon className="w-8 h-8 text-white" />,
-    color: "#FF6900",
-    tilt: "7deg",
-    number: "02",
-  },
-  {
-    title: "Choose Your Driver",
-    description:
-      "Select the driver that best fits your needs. View ratings and estimated arrival time.",
-    icon: <CheckCircleIcon className="w-8 h-8 text-white" />,
-    color: "#00C950",
-    tilt: "7deg",
-    number: "03",
-  },
-  {
-    title: "Track & Receive",
-    description:
-      "Track your fuel delivery in real-time. Pay securely through the app after delivery.",
-    icon: <CreditCardIcon className="w-8 h-8 text-white" />,
-    color: "#AD46FF",
-    tilt: "7deg",
-    number: "04",
-  },
-  {
-    title: "Rate Experience",
-    description:
-      "Rate your driver and help maintain our quality service standards.",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="white"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-      </svg>
-    ),
-    color: "#F0B100",
-    tilt: "7deg",
-    number: "05",
-  },
+const stepIcons = [
+  <MapPinIcon key="map" className="w-8 h-8 text-white" />,
+  <SearchIcon key="search" className="w-8 h-8 text-white" />,
+  <CheckCircleIcon key="check" className="w-8 h-8 text-white" />,
+  <CreditCardIcon key="card" className="w-8 h-8 text-white" />,
+  <svg key="star" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+  </svg>,
 ];
 
-export default function HowItWorks() {
+const stepColors = ["#FF6900", "#FF6900", "#00C950", "#AD46FF", "#F0B100"];
+
+const defaultSteps = [
+  { title: "Place Fuel Request", description: "Enter your location and fuel requirements. Choose your preferred fuel type and quantity." },
+  { title: "Get Multiple Bids", description: "Receive competitive bids from nearby verified drivers. Compare prices and delivery times." },
+  { title: "Choose Your Driver", description: "Select the driver that best fits your needs. View ratings and estimated arrival time." },
+  { title: "Track & Receive", description: "Track your fuel delivery in real-time. Pay securely through the app after delivery." },
+  { title: "Rate Experience", description: "Rate your driver and help maintain our quality service standards." },
+];
+
+export default function HowItWorks({ t }) {
+  const stepData = t?.steps || defaultSteps;
+  const steps = stepData.map((s, i) => ({
+    ...s,
+    icon: stepIcons[i],
+    color: stepColors[i],
+    tilt: "7deg",
+    number: String(i + 1).padStart(2, "0"),
+  }));
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -110,7 +75,7 @@ export default function HowItWorks() {
         >
           <div className="px-4 py-1.5 rounded-full bg-[#F9EEE3] w-fit">
             <span className="text-[#F98410] font-semibold text-sm font-space">
-              Simple Process
+              {t?.badge || "Simple Process"}
             </span>
           </div>
 
@@ -118,11 +83,11 @@ export default function HowItWorks() {
             className="text-[32px] md:text-5xl font-semibold text-[#111827] tracking-tight leading-[1.2] md:leading-tight"
             style={{ fontFamily: "var(--font-space-grotesk)" }}
           >
-            How It Works for <span className="text-[#F98410]">Users</span>
+            {t?.title || "How It Works for"} <span className="text-[#F98410]">{t?.titleHighlight || "Users"}</span>
           </h2>
 
           <p className="text-gray-500 text-[16px] md:text-lg max-w-2xl font-inter">
-            Getting fuel delivered to your location is as easy as 1-2-3-4-5
+            {t?.subtext || "Getting fuel delivered to your location is as easy as 1-2-3-4-5"}
           </p>
         </motion.div>
 
@@ -206,7 +171,7 @@ export default function HowItWorks() {
             rel="noopener noreferrer"
             className="px-7 py-3 rounded-full bg-[#f98410] text-white font-semibold text-[18px] hover:bg-[#fb8c1f] transition-all duration-300 transform hover:scale-105 shadow-[0_10px_30px_rgba(249,132,16,0.3)] active:scale-95"
           >
-            Start Your First Request
+            {t?.ctaButton || "Start Your First Request"}
           </a>
         </motion.div>
       </div>

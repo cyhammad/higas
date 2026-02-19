@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
 
-export default function Footer() {
+export default function Footer({ t, lang }) {
   return (
     <footer className="bg-white pb-10 border-t border-gray-50 flex flex-col items-center">
       <motion.div
@@ -16,10 +16,10 @@ export default function Footer() {
       >
         {/* Logo */}
         <div className="flex justify-center">
-          <Link href="/">
+          <Link href={`/?lang=${lang || "en"}`}>
             <Image
               src="/higas-logo.png"
-              alt="HI-GAS Logo"
+              alt="Hi-GAS Logo"
               width={140}
               height={140}
               className="h-auto w-32 md:w-36"
@@ -33,17 +33,16 @@ export default function Footer() {
             className="text-3xl md:text-5xl font-bold text-[#2B2B2B] tracking-tight"
             style={{ fontFamily: "var(--font-space-grotesk)" }}
           >
-            Join the HI-GAS community
+            {t?.title || "Join the Hi-GAS community"}
           </h2>
           <p className="text-gray-400 text-base md:text-lg leading-relaxed font-inter">
-            The smartest way to get fuel delivered directly to your location.
-            Fast, reliable, and affordable.
+            {t?.subtext || "The smartest way to get fuel delivered directly to your location. Fast, reliable, and affordable."}
           </p>
         </div>
 
         {/* Copyright */}
         <div className="pt-8 text-gray-400 text-sm font-inter">
-          <p>© 2026 – 2027 Higas. All rights reserved.</p>
+          <p>{t?.copyright || "© 2026 – 2027 Higas. All rights reserved."}</p>
         </div>
       </motion.div>
     </footer>
